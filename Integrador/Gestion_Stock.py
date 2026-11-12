@@ -25,13 +25,12 @@ def cargar_stock():
             stock[cat] = []
             cantidad[cat] = []
         else:
-            print("Operación cancelada.")
+            print("Pos nada")
             return
     nom = input("Ingrese el nombre del producto: ")
     cant = int(input("Ingrese la cantidad que quiere añadir: "))
     stock[cat].append(nom)
     cantidad[cat].append(cant)
-    print(f"Producto '{nom}' cargado correctamente en '{cat}'.")
 def mostrar_stock():
     print(stock)
     print(cantidad)
